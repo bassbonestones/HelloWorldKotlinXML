@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchToggleDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="24dp"
+        android:checked="false"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/inner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/editTextGreeting"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:autofillHints="greeting"
+            android:background="@color/light_gray"
+            android:hint="@string/enter_greeting"
+            android:inputType="text"
+            android:maxWidth="488dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/hello"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="name"
+            android:background="@color/light_gray"
+            android:hint="@string/enter_name"
+            android:inputType="text"
+            android:maxWidth="488dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/world"/>
+
+        <TextView
+            android:id="@+id/textViewHelloWorld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/hello_world"
+            android:textColor="@color/blue"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDefaultGreeting"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                android:text="@string/default_btn" />
+
+            <Button
+                android:id="@+id/btnClearGreeting"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                android:text="@string/clear_btn" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
